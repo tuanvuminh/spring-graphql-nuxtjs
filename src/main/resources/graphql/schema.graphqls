@@ -1,0 +1,15 @@
+scalar Date
+
+type Query {
+    findAllPosts: [Post]
+    findPostById(id: ID!): Post
+}
+
+type Post {
+    id: ID!
+    title: String!
+    slug: String!
+    date: Date
+    timeToRead: Int
+    tags: String
+}
